@@ -939,3 +939,13 @@ setComments([...comments, created]);
 ---
 
 # 🚀 ¡ÉXITO EN EL PARCIAL! 💪
+
+
+✅ Cadena completa de tokens:
+
+Paso	Qué pasa	Archivo
+1	Backend devuelve accessToken	login.service.js
+2	Login.jsx lo guarda como 'token' en localStorage	Login.jsx:25
+3	Contexto recibe el token	AuthContext.jsx:8-17
+4	ProtectedRoute verifica si existe token	ProtectedRoute.jsx:11
+5	axiosClient agrega token al header automáticamente	axiosClient.js:17-21
